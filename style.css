@@ -24,6 +24,7 @@
   position: absolute;
   width: 400px;
   height: 400px;
+  z-index: -1;
 }
 
 .rotate {
