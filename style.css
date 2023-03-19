@@ -20,7 +20,7 @@
   position: absolute;
   width: 400px;
   height: 400px;
-  animation: hue-rotation 10s ease-in-out infinite;
+  animation: hue-rotation 3s ease-in-out infinite;
 }
 
 .image2 {
