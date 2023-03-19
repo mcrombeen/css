@@ -1,4 +1,65 @@
-<div class="container">
-  <img src="https://raw.githubusercontent.com/mcrombeen/15t/main/color_wheel.png" class="image1 rotate">
-  <img src="https://raw.githubusercontent.com/mcrombeen/15t/main/hounted_house.png" class="image2">
-</div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotating Image</title>
+    <style>
+      .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      .image1 {
+        position: absolute;
+        width: 400px;
+        height: 400px;
+      }
+
+      .image2 {
+        position: absolute;
+        width: 400px;
+        height: 400px;
+      }
+
+      .rotate {
+        animation: rotation 5s infinite linear;
+      }
+
+      @keyframes rotation {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      @media (max-width: 767px) {
+        .container {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          width: 80%;
+        }
+
+        .image1,
+        .image2 {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="https://raw.githubusercontent.com/mcrombeen/css/main/color_wheel.png" class="image1 rotate">
+      <img src="https://raw.githubusercontent.com/mcrombeen/css/main/hounted_house.png" class="image2">
+    </div>
+  </body>
+</html>
