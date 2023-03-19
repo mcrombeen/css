@@ -20,6 +20,7 @@
   position: absolute;
   width: 400px;
   height: 400px;
+  animation: hue-rotation 5s ease-in-out infinite;
 }
 
 .image2 {
@@ -34,43 +35,15 @@
   position: absolute;
   width: 400px;
   height: 400px;
+  animation: hue-rotation 5s ease-in-out infinite;
 }
 
-.rotate {
-  animation: rotation 10s infinite linear,brightness 2s ease-in-out infinite;
-}
-
-.rotate-opposite {
-  animation: rotation-opposite 5s infinite linear;
-}
-
-@keyframes brightness {
-  0% {
-    filter: brightness(100%);
-  }
-  50% {
-    filter: brightness(60%);
-  }
-  100% {
-    filter: brightness(100%);
-  }
-}
-
-@keyframes rotation {
+@keyframes hue-rotation {
   from {
-    transform: rotate(0deg);
+    filter: hue-rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes rotation-opposite {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(-360deg);
+    filter: hue-rotate(360deg);
   }
 }
 
