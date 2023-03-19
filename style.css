@@ -20,6 +20,25 @@
   opacity: 0.5;
 }
 
+.image3 {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+}
+
+.rotate {
+  animation: rotation 5s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @media (max-width: 767px) {
   .container {
     position: absolute;
@@ -31,7 +50,8 @@
   }
 
   .image1,
-  .image2 {
+  .image2,
+  .image3 {
     width: 100%;
     height: auto;
   }
