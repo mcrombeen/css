@@ -37,7 +37,7 @@
 }
 
 .rotate {
-  animation: rotation 5s infinite linear;
+  animation: rotation 10s infinite linear;
 }
 
 .rotate-opposite {
