@@ -41,8 +41,19 @@
 }
 
 .rotate-opposite {
-  animation: rotation-opposite 5s infinite linear;
+  animation: rotation-opposite 5s infinite linear, brightness 2s ease-in-out infinite;
 }
+
+@keyframes brightness {
+  0% {
+    filter: brightness(100%);
+  }
+  50% {
+    filter: brightness(150%);
+  }
+  100% {
+    filter: brightness(100%);
+  }
 
 @keyframes rotation {
   from {
