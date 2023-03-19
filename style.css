@@ -6,6 +6,16 @@
   text-align: center;
 }
 
+.container-image3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: -1;
+  left: -200px;
+}
+
 .image1 {
   position: absolute;
   width: 400px;
@@ -24,8 +34,6 @@
   position: absolute;
   width: 400px;
   height: 400px;
-  z-index: -1;
-  left: -200px;
 }
 
 .rotate {
@@ -42,7 +50,8 @@
 }
 
 @media (max-width: 767px) {
-  .container {
+  .container,
+  .container-image3 {
     position: absolute;
     top: 50%;
     left: 50%;
