@@ -16,27 +16,8 @@
   position: absolute;
   width: 400px;
   height: 400px;
-}
-
-.image3 {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-   left: -200px;
-}
-
-.rotate {
-  animation: rotation 8s infinite linear;
-}
-
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  z-index: 1;
+  opacity: 0.5;
 }
 
 @media (max-width: 767px) {
@@ -51,11 +32,6 @@
 
   .image1,
   .image2 {
-    width: 100%;
-    height: auto;
-  }
-
-  .image3 {
     width: 100%;
     height: auto;
   }
